@@ -56,7 +56,6 @@ Inquiries regarding the scripts provided below are cordially welcome. In case yo
 If you use our algorithms, please cite [[1]](https://ieeexplore.ieee.org/document/8969097).
 
 ```bibtex
-
 @INPROCEEDINGS{ARESCAL,
   author={D. G. {Chachlakis} and Y. {Tsitsikas} and E. E. {Papalexakis} and P. P. {Markopoulos}},
   booktitle={2019 IEEE Global Conference on Signal and Information Processing (GlobalSIP)}, 
