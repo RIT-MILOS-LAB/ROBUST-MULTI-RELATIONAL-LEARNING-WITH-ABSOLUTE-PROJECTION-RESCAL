@@ -6,12 +6,12 @@ def efficient(tensor, initialization = None, tolerance = 1e-6):
     if initialization is None: initialization = omega(np.random.randn(D, ))
     q, u, = initialization, initialization
     b = update_b(tensor, q, u)
-    evolution = [(q.T @ yofb(tensor, b) @ u).flatten()]
+    evolution = [(q.T @ yofb(tensor, b) @ u).item()]
     while True:
         q = omega(yofb(tensor, b) @ u)
         b = update_b(tensor, q, u)
         u = omega(yofb(tensor, b) @ q)
-        evolution.append((q.T @ yofb(tensor, b) @ u).flatten())
+        evolution.append((q.T @ yofb(tensor, b) @ u).item())
         if evolution[-1]-evolution[-2] < tolerance: break
     return q, b, evolution
  

@@ -6,6 +6,9 @@ In this repo we implent algorithms for the exact and approximate solution to Abs
 ![equation](https://latex.codecogs.com/svg.latex?%5Cunderset%7B%5Cmathbf%20Q%20%5Cin%20%5Cmathbb%20R%5E%7BD%5Ctimes%20d%7D%7E%3A%7E%5Cmathbf%20Q%5E%5Ctop%5Cmathbf%20Q%3D%5Cmathbf%20I_d%7D%7B%5Ctext%7Bmax.%7D%7D%5Csum_%7Bn%3D1%7D%5EN%5Cleft%5C%7C%5Cmathbf%20Q%5E%5Ctop%5Cmathbf%20X_n%5Cmathbf%20Q%5Cright%5C%7C_1.)
 
 ---
+IEEE Xplore: https://ieeexplore.ieee.org/document/8969097
+
+---
 **Examples**
 
 First, let us create a D-by-D-by-N tensor --i.e., a collection of N matrix measurements. 
@@ -21,12 +24,12 @@ tensor = np.random.randn(D, D, N)
 A-RESCAL can be solved exactly for the special case d=1 with the following code:
 ```python
 qopt, bopt, vopt = arescal.exact(tensor)
-print('Metric attained by exact solution:\t' + str(vopt))
+print('Metric attained by exact solution:\t\t' + str(vopt))
 ```
 The solution to A-RESCAL can be efficiently approximated for the special case d=1 with the following piece of code:
 ```python
 q, b, evo = arescal.efficient(tensor) 
-print('Metric attained by exact solution:\t' + str(evo[-1]))
+print('Metric attained by approximate solution:\t' + str(evo[-1]))
 ```
 Next, with the following code we can compare the metric attained by the exact solution with the metric evolution of the approximate algorithm.
 ```python
@@ -50,7 +53,7 @@ Inquiries regarding the scripts provided below are cordially welcome. In case yo
 ---
 **Citing**
 
-If you use our algorithms, please cite [[1]]().
+If you use our algorithms, please cite [[1]](https://ieeexplore.ieee.org/document/8969097).
 
 ```bibtex
 
