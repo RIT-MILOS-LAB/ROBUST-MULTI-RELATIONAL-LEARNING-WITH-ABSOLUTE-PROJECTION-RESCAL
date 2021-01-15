@@ -21,12 +21,12 @@ tensor = np.random.randn(D, D, N)
 A-RESCAL can be solved exactly for the special case d=1 with the following code:
 ```python
 qopt, bopt, vopt = arescal.exact(tensor)
-print('Metric attained by exact solution:\t' + str(vopt) + '\n')
+print('Metric attained by exact solution:\t' + str(vopt))
 ```
 The solution to A-RESCAL can be efficiently approximated for the special case d=1 with the following piece of code:
 ```python
 q, b, evo = arescal.efficient(tensor) 
-print('Metric attained by exact solution:\t' + str(evo[-1]) + '\n')
+print('Metric attained by exact solution:\t' + str(evo[-1]))
 ```
 Next, with the following code we can compare the metric attained by the exact solution with the metric evolution of the approximate algorithm.
 ```python
@@ -45,12 +45,12 @@ Q = arescal.efficient_deflation(tensor, d)
 
 ---
 **Questions/issues**
-Inquiries regarding the scripts provided below are cordially welcome. In case you spot a bug, please let me know. If you use some piece of code for your own work, please cite [[1]](https://ieeexplore.ieee.org/document/8969097).
+Inquiries regarding the scripts provided below are cordially welcome. In case you spot a bug, please let me know. 
 
 ---
 **Citing**
 
-If you use our algorithms, please cite [[1]].
+If you use our algorithms, please cite [[1]]().
 
 ```bibtex
 
