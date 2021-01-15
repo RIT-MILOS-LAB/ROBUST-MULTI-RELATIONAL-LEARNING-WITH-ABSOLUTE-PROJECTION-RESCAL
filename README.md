@@ -18,7 +18,7 @@ D = 10
 N = 10
 tensor = np.random.randn(D, D, N)
 ```
-A-RESCAL can be solved exactly for the special case d=1 with the following piece of code:
+A-RESCAL can be solved exactly for the special case d=1 with the following code:
 ```python
 qopt, bopt, vopt = arescal.exact(tensor)
 print('Metric attained by exact solution:\t' + str(vopt) + '\n')
