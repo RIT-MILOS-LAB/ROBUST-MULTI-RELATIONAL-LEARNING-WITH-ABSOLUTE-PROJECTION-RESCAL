@@ -1,4 +1,4 @@
-## ROBUST MULTI-RELATIONAL LEARNING WITH ABSOLUTE PROJECTION RESCAL
+## Robust Multi-Relational Learning with Absolute Projection Rescal
 
 
 In this repo we implent algorithms for the exact and approximate solution to Absolute Projection RESCAL *(A-RESCAL)* as presented in [[1]](https://ieeexplore.ieee.org/document/8969097). Considering a collection of N matrix measurements ![eqation](https://latex.codecogs.com/svg.latex?%5Cinline%20%5Cmathbf%20X_1%2C%20%5Cmathbf%20X_2%2C%20%5Cldots%2C%20%5Cmathbf%20X_N%2C%20%5Cmathbf%20X_n%20%5Cin%20%5Cmathbb%20R%5E%7BD%5Ctimes%20D%7D%20%5Cforall%20n), A-RESCAL is formally formulated as 
